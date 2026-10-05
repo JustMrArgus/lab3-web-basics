@@ -33,6 +33,9 @@ async function main() {
     // Режим long polling (локальний запуск)
     await bot.api.deleteWebhook();
     bot.start({ onStart: (me) => console.log(`Бот @${me.username} запущено (polling)`) });
+    app.listen(PORT, async () => {
+      console.log(`Слухаю сервер (порт ${PORT})`);
+    });
   }
 }
 
