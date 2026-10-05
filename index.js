@@ -19,9 +19,10 @@ async function main() {
     { command: 'reset', description: 'Нова розмова з AI' },
   ]);
 
+  const app = express();
+
   if (WEBHOOK_URL) {
     // Режим webhook (Render): Telegram сам надсилає оновлення на наш сервер
-    const app = express();
     app.use(express.json());
     app.get('/', (req, res) => res.send('Telegram bot Rodina IM-33 is running'));
     app.post('/webhook', webhookCallback(bot, 'express', { secretToken: WEBHOOK_SECRET }));
