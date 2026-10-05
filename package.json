@@ -1,0 +1,19 @@
+{
+  "name": "lab3-telegram-bot",
+  "version": "1.0.0",
+  "description": "Лаб. 3: Telegram-бот з меню та AI (Родіна О.В., ІМ-33, варіант 15)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Родіна О.В., ІМ-33",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "grammy": "^1.46.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
